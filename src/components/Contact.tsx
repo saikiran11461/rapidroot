@@ -25,7 +25,8 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
     e.preventDefault();
     // Handle form submission here
     console.log('Form submitted:', formData);
-    alert('Thank you for your message! We\'ll get back to you soon.');
+    alert('Thank you for your message! We&apos;ll get back to you soon.');
+
     setFormData({
       name: '',
       email: '',
@@ -47,11 +48,10 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
           Touch
         </span>
       </h2>
-      <p className={`text-base max-w-2xl mx-auto ${
-        darkMode ? 'text-gray-300' : 'text-gray-600'
-      }`}>
-        Let’s discuss your ideas and bring your vision to life.
-      </p>
+      <p className={`text-base max-w-2xl mx-auto ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
+  Let&apos;s discuss your ideas and bring your vision to life.
+</p>
+
     </div>
 
     {/* Content Grid */}

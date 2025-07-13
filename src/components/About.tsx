@@ -103,8 +103,9 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
             Ready to Transform Your Ideas?
           </h3>
           <p className="text-lg max-w-3xl mx-auto mb-8">
-            We build robust, fast, and scalable solutions tailored to your ideas — whether it's an app, website, or an AI/ML project.
-          </p>
+  We build robust, fast, and scalable solutions tailored to your ideas — whether it&apos;s an app, website, or an AI/ML project.
+</p>
+
           <button
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-white text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition duration-300 shadow-md"

@@ -32,9 +32,10 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
               RapidRoot
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              We build fast, modern, and intelligent solutions that transform your ideas into powerful digital experiences. 
-              Let's create something amazing together.
-            </p>
+  We build fast, modern, and intelligent solutions that transform your ideas into powerful digital experiences. 
+  Let&apos;s create something amazing together.
+</p>
+
             <div className="flex space-x-4">
               <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition-colors">
                 <Github className="w-5 h-5" />
