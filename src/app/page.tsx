@@ -9,7 +9,6 @@ import Services from "@/components/Services";
 import TechStack from "@/components/TechStack";
 import Testimonials from "@/components/Testimonials";
 import WhyChooseUs from "@/components/WhyChooseUs";
-import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {

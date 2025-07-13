@@ -35,7 +35,7 @@ const About: React.FC<AboutProps> = ({ darkMode }) => {
   ];
 
   return (
-    <section id="about" className={`py-24 relative ${darkMode ? 'bg-[#0a0a0a]' : 'bg-[#f9fafb]'}`}>
+    <section id="about" className={`py-24 z-10 relative ${darkMode ? 'bg-[#0a0a0a]' : 'bg-[#f9fafb]'}`}>
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute w-96 h-96 bg-purple-500 opacity-20 rounded-full filter blur-3xl -top-24 -left-24" />
         <div className="absolute w-96 h-96 bg-blue-500 opacity-20 rounded-full filter blur-3xl top-1/2 -right-24" />
