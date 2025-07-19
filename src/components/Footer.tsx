@@ -15,7 +15,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
   return (
     <footer className={`py-16 ${darkMode ? 'bg-gray-900' : 'bg-gray-900'} text-white relative`}>
       <div className="container mx-auto px-6">
-        {/* Back to Top Button */}
+  
         <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
           <button
             onClick={scrollToTop}
@@ -26,7 +26,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
         </div>
 
         <div className="grid md:grid-cols-4 gap-8 mb-12">
-          {/* Company Info */}
+    
           <div className="md:col-span-2">
             <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-4">
               RapidRoot
@@ -52,7 +52,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
             </div>
           </div>
 
-          {/* Quick Links */}
+       
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -91,7 +91,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
             </ul>
           </div>
 
-          {/* Services */}
+        
           <div>
             <h3 className="text-xl font-bold mb-4">Services</h3>
             <ul className="space-y-2">
@@ -103,7 +103,7 @@ const Footer: React.FC<FooterProps> = ({ darkMode }) => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
+ 
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 mb-4 md:mb-0">

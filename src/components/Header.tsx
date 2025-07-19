@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, isMenuOpen, t
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-    toggleMenu(); // Close mobile menu after clicking
+    toggleMenu(); 
   };
 
   return (
@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, isMenuOpen, t
             RapidRoot
           </div>
           
-          {/* Desktop Navigation */}
+
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('about')}
@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, isMenuOpen, t
             </button>
           </nav>
 
-          {/* Mobile Menu Button */}
+
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={toggleDarkMode}
@@ -84,7 +84,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, isMenuOpen, t
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+     
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 space-y-4">
             <button 

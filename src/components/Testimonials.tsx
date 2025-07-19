@@ -51,7 +51,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ darkMode }) => {
     }
   ];
 
-  // Duplicate testimonials for seamless infinite scroll
+
   const duplicatedTestimonials = [...testimonials, ...testimonials];
 
   return (
@@ -72,7 +72,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ darkMode }) => {
           </p>
         </div>
 
-        {/* Infinite Scrolling Testimonials */}
+        
         <div className="relative">
           <div className="flex animate-scroll space-x-6">
             {duplicatedTestimonials.map((testimonial, index) => (
@@ -84,26 +84,26 @@ const Testimonials: React.FC<TestimonialsProps> = ({ darkMode }) => {
                     : 'bg-white border border-gray-200'
                 } hover:scale-105 transition-transform duration-300`}
               >
-                {/* Quote Icon */}
+              
                 <div className="mb-4">
                   <Quote className={`w-8 h-8 ${darkMode ? 'text-blue-400' : 'text-blue-500'}`} />
                 </div>
 
-                {/* Testimonial Content */}
+     
                 <p className={`text-lg mb-6 leading-relaxed ${
                   darkMode ? 'text-gray-300' : 'text-gray-600'
                 }`}>
                   "{testimonial.content}"
                 </p>
 
-                {/* Rating */}
+           
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
 
-                {/* Author Info */}
+   
                 <div className="flex items-center">
                   <img
                     src={testimonial.avatar}
@@ -123,7 +123,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ darkMode }) => {
             ))}
           </div>
 
-          {/* Gradient Overlays */}
+     
           <div className={`absolute top-0 left-0 w-32 h-full bg-gradient-to-r ${
             darkMode ? 'from-gray-800 to-transparent' : 'from-gray-50 to-transparent'
           } pointer-events-none z-10`}></div>
@@ -132,7 +132,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({ darkMode }) => {
           } pointer-events-none z-10`}></div>
         </div>
 
-        {/* Call to Action */}
+  
         <div className="text-center mt-16">
           <p className={`text-lg mb-6 ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}>
             Ready to join our satisfied clients?

@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
     <section className={`min-h-screen flex items-center justify-center relative overflow-hidden ${
       darkMode ? 'bg-gray-900' : 'bg-white'
     }`}>
-      {/* Background Elements */}
+
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
@@ -25,7 +25,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
 
       <div className="container mx-auto px-6 pt-20 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
-          {/* Floating Icons */}
+     
           <div className="flex justify-center space-x-8 mb-8 opacity-60">
             <div className="animate-bounce delay-100">
               <Code className="w-8 h-8 text-blue-500" />
@@ -76,7 +76,7 @@ const Hero: React.FC<HeroProps> = ({ darkMode }) => {
             </button>
           </div>
 
-          {/* Stats */}
+      
           <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
               <div className="text-3xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-2">

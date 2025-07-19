@@ -23,7 +23,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
+  
     console.log('Form submitted:', formData);
     alert('Thank you for your message! We&apos;ll get back to you soon.');
 
@@ -39,7 +39,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
   return (
     <section id="contact" className={`py-14 ${darkMode ? 'bg-gray-800' : 'bg-gray-50'}`}>
   <div className="container mx-auto px-4 md:px-6">
-    {/* Header */}
+
     <div className="text-center mb-12">
       <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${
         darkMode ? 'text-white' : 'text-gray-900'
@@ -54,16 +54,16 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
 
     </div>
 
-    {/* Content Grid */}
+
     <div className="grid lg:grid-cols-2 gap-8">
-      {/* Contact Info */}
+
       <div>
         <h3 className={`text-xl font-bold mb-6 ${darkMode ? 'text-white' : 'text-gray-900'}`}>
           Let's Start a Conversation
         </h3>
 
         <div className="space-y-5 mb-6">
-          {/* Info Item */}
+    
           {[
             { Icon: Mail, label: "Email", value: "hello@rapidroot.dev", gradient: "from-blue-500 to-purple-600" },
             { Icon: Phone, label: "Phone", value: "+1 (555) 123-4567", gradient: "from-purple-500 to-pink-500" },
@@ -81,7 +81,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
           ))}
         </div>
 
-        {/* Quick Actions */}
+    
         <div className="space-y-3">
           <button className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-5 py-3 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition">
             <Calendar className="w-4 h-4" />
@@ -99,7 +99,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
         </div>
       </div>
 
-      {/* Form */}
+
       <div className={`p-6 rounded-xl ${
         darkMode 
           ? 'bg-gray-900/50 border border-gray-700' 
@@ -107,7 +107,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
       }`}>
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid md:grid-cols-2 gap-5">
-            {/* Name */}
+       
             <div>
               <label className={`text-sm font-medium mb-1 block ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 Full Name *
@@ -127,7 +127,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
               />
             </div>
 
-            {/* Email */}
+       
             <div>
               <label className={`text-sm font-medium mb-1 block ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
                 Email Address *
@@ -148,7 +148,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
             </div>
           </div>
 
-          {/* Company */}
+      
           <div>
             <label className={`text-sm font-medium mb-1 block ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               Company
@@ -167,7 +167,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
             />
           </div>
 
-          {/* Service */}
+    
           <div>
             <label className={`text-sm font-medium mb-1 block ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               Service Interested In
@@ -192,7 +192,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
             </select>
           </div>
 
-          {/* Message */}
+  
           <div>
             <label className={`text-sm font-medium mb-1 block ${darkMode ? 'text-gray-300' : 'text-gray-700'}`}>
               Project Details *
@@ -212,7 +212,7 @@ const Contact: React.FC<ContactProps> = ({ darkMode }) => {
             />
           </div>
 
-          {/* Submit */}
+  
           <button
             type="submit"
             className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold text-base hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 shadow-md flex items-center justify-center gap-2"
